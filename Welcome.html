@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 50%);
+      }
+      @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900,400italic,700italic,900italic);
+
+      *,
+      :before,
+      :after {
+        box-sizing: border-box;
+      }
+      p {
+        font-size: 16px;
+        color: white;
+        margin-top: 16px;
+      }
+      .btn {
+        background-color: #2196f3;
+        color: white;
+        padding: 5px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        float: right;
+        margin-right: 8px;
+        margin-top: 8px;
+      }
+
+      .dropdown {
+        position: relative;
+        float: right;
+        margin-right: -7.5px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: #f1f1f1;
+        min-width: 110px;
+        z-index: 10;
+        float: right;
+        margin-top: 7px;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 17px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .btn:hover,
+      .dropdown:hover .btn {
+        background-color: #4199e0;
+      }
+
+      body {
+        background-color: #fdf9fd;
+        color: #011a32;
+        font: 16px/1.25 "Raleway", sans-serif;
+        text-align: center;
+        height: auto;
+        margin-top: 20px;
+      }
+
+      #wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 40em;
+      }
+
+      #container {
+        display: flex;
+        flex-direction: column;
+        float: left;
+        justify-content: center;
+        min-height: 5vh;
+        padding: 1em;
+        width: 100%;
+      }
+
+      h1 {
+        animation: text-shadow 1.5s ease-in-out;
+        animation-iteration-count: 4;
+        font-size: 5em;
+        font-weight: 900;
+        line-height: 1;
+      }
+
+      h1:hover {
+        animation-play-state: paused;
+      }
+
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        background-color: black;
+      }
+
+      nav {
+        clear: left;
+      }
+      nav ul {
+        list-style-type: none;
+      }
+      nav ul li {
+        display: inline;
+      }
+      nav ul li a {
+        text-decoration: none; /* no underline */
+      }
+      .button {
+        background-color: #4caf50; /* Green */
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+
+      .button1 {
+        background-color: white;
+        color: black;
+        border: 2px solid #4caf50;
+      }
+
+      .button1:hover {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      .button2 {
+        background-color: white;
+        color: black;
+        border: 2px solid #008cba;
+      }
+
+      .button2:hover {
+        background-color: #008cba;
+        color: white;
+      }
+
+      .button3 {
+        background-color: white;
+        color: black;
+        border: 2px solid #f44336;
+      }
+
+      .button3:hover {
+        background-color: #f44336;
+        color: white;
+      }
+
+      .button4 {
+        background-color: white;
+        color: black;
+        border: 2px solid #e7e7e7;
+      }
+
+      .button4:hover {
+        background-color: #e7e7e7;
+      }
+
+      @keyframes text-shadow {
+        0% {
+          transform: translateY(0);
+          text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b,
+            0 0 0 #fefc4b;
+        }
+
+        20% {
+          transform: translateY(-1em);
+          text-shadow: 0 0.125em 0 #0c2ffb, 0 0.25em 0 #2cfcfd,
+            0 -0.125em 0 #fb203b, 0 -0.25em 0 #fefc4b;
+        }
+
+        40% {
+          transform: translateY(0.5em);
+          text-shadow: 0 -0.0625em 0 #0c2ffb, 0 -0.125em 0 #2cfcfd,
+            0 0.0625em 0 #fb203b, 0 0.125em 0 #fefc4b;
+        }
+
+        60% {
+          transform: translateY(-0.25em);
+          text-shadow: 0 0.03125em 0 #0c2ffb, 0 0.0625em 0 #2cfcfd,
+            0 -0.03125em 0 #fb203b, 0 -0.0625em 0 #fefc4b;
+        }
+
+        80% {
+          transform: translateY(0);
+          text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b,
+            0 0 0 #fefc4b;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+      .menu ul {
+        display: inline-flex;
+        margin: 50px;
+      }
+      .menu ul li {
+        list-style: none;
+        margin: 0 20px;
+        color: black;
+        cursor: pointer;
+      }
+
+      .emergency {
+        top: 30px;
+        left: 30px;
+        position: absolute;
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">LANGUAGE</button>
+    <div class="dropdown">
+      <button class="btn" style="border-right: 1px solid #0d8bf2">
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">
+          <!--JavaScript function for when the button is clicked-->
+          <button onclick="myFunction()">Hindi</button>
+          हिन्दी</a
+        >
+        <a href="#">
+          <!--JavaScript function for when the button is clicked-->
+          <button onclick="myFunction()">Kannada</button>
+          ಕನ್ನಡ</a
+        >
+
+        <a href="#">
+          <!--JavaScript function for when the button is clicked-->
+          <button onclick="myFunction()">Telugu</button>
+          తెలుగు</a
+        >
+
+        <a href="#">
+          <!--JavaScript function for when the button is clicked-->
+          <button onclick="myFunction()">Tamil</button>
+          தமிழ்</a
+        >
+
+        <a href="#">
+          <!--JavaScript function for when the button is clicked-->
+          <button onclick="myFunction()">Marathi</button>
+          मराठी</a
+        >
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="container">
+        <h1>WELCOME TO OXYMAP!</h1>
+        <div class="footer">
+          <p>&copy 2021 OxyMap All rights reserved</p>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li class="button button1">
+          <a href="Oxygen(Agra).html" target="_blank">O2 Cylinder</a>
+        </li>
+        <li class="button button2">
+          <a href="Oxymap(Delhi).html" target="_blank">Remdesivir</a>
+        </li>
+        <li class="button button3">
+          <a href="Hospitals.html" target="_blank">Blood Plasma</a>
+        </li>
+        <li class="button button4"><a href="Hospitals.html">ICU Beds</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="emergy.html" target="_blank" class="emergency"
+              >Emergency</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
