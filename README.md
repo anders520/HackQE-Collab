@@ -10,8 +10,8 @@ During the COVID-19 crisis, India faced a severe shortage of oxygen cylinders an
 
 -  **Find Nearby Hospitals** – Locate the nearest hospitals and medical centers.  
 -  **Resource Availability** – Check locations with O2 cylinders and essential medical equipment.  
--  **Google Maps Integration** – Built-in maps for easy navigation.  
--  **Google Translate Support** – Multi-language accessibility for wider reach.  
+-  **Google Maps Integration** – Built in maps for easy navigation.  
+-  **Google Translate Support** – Multi language accessibility for wider reach.  
 
 ---
 
